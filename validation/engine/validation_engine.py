@@ -3,8 +3,8 @@ import time
 from typing import List
 from loguru import logger
 
-from engine.metrics.alignment_scorer import ImageVSImageMetric, TextVSImageMetric
-from engine.metrics.quality_scorer import ImageQualityMetric
+from validation.engine.metrics.alignment_scorer import ImageVSImageMetric, TextVSImageMetric
+from validation.engine.metrics.quality_scorer import ImageQualityMetric
 
 
 class ValidationEngine:
