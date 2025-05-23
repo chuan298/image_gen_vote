@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+git+https://github.com/huggingface/diffusers.git
+transformers
+accelerate
+torch
+Pillow
+openai
+python-dotenv
+httpx
