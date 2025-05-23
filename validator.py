@@ -86,7 +86,8 @@ class ImageValidator:
 
         # Sắp xếp giảm dần theo merge_score, chọn top_k
         scored_imgs.sort(key=lambda x: x[0], reverse=True)
-        selected_images = [img for _, img in scored_imgs[:top_k]]
+        top_indices = [idx for _, idx in scored_imgs[:top_k]]
+        selected_images = [images[idx] for idx in top_indices]
 
         print(f"Validator selected {len(selected_images)} images.")
         return selected_images
